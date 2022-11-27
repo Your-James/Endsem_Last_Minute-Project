@@ -81,7 +81,7 @@ def run():
                         print(input_text)
                         word = "Welcome to VIIT. Get ready to commit suicide."
                         if (not end):
-                            #Calculate time
+                            #Calculate the time required
                             total_time = time.time() - time_start
 
                             #Calculate accuracy
