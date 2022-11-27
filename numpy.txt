@@ -1,0 +1,80 @@
+#Add an element : append()
+#Removing an element : pop()
+#Numpy array making syntax : a = np.array([])
+#Accessing array elements 
+    in 1D : print(a[0])
+    in 2D : arr = np.array([[1,2,3], [4,5,6]])
+               print(arr[0, 1])    o/p = 1
+     in 3D : arr = np.array([[[1,2,3],[4,5,6]], [[7,8,9], [10,11,12]]])
+                print(arr[0,1,2])  o/p = 6
+#Negative Indexing starts from -1
+#List vs Arrays
+  1) Inserting in between in lists is exhaustive since arrays are contagious in memory.
+  2) 
+
+
+
+#Numpy operations : a = np.array([[1,2,3], [4,5,6]])
+ 1) ndim : print(a.ndim)  0/p = 2
+ 2) itemsize : print(a.itemsize) o/p = no of bytes comsumed by each element in the array
+ 3) dtype : print(a.dtype)  o/p = int64 >can be used to find the data type of a particular element also by giving index of that element
+ 4) size, shape : print(a.size, a.shape)  o/p = 6 (2,3)
+ 5) reshape : to change the no of rows and columns in an array   print(a.reshape(3,2)) 
+ 6) slicing : a = np.array([[1,2,3], [4,5,6]])
+                 print(a[0: ,2])  o/p = [3,6] 
+                 # its saying, start from 0th row till last and print every 2nd elment  of all the rows
+ 7) linspace : a = np.linspace(1,3,10)
+                    print(a)
+                    # will print 10 values form 1 to 3 which evenly spaced
+ 8) max/ min/ sum : a = np.array([1,2,3])
+                               print(a.max())  # 3
+                               print(a.min())  # 1
+                               print(a.sum())  # 6
+9) axis : columns are axis 0 
+             rows are axis 1      a.sum(axis=1) finds sum of all the rows
+ 10) square root and standard deviation : np.sqrt(a) # gives sqrt of all the elements in the array
+                                                            np.std(a) # gives std of the array
+11) addition/ sub/ multiplication/ division : simply by using +/-/*//
+12) stacking : vetical by np.vstack(x,y) # think it as array is put one over another
+                     horizontal by np.hstack(x,y) # array are joined or conacatnated side by side
+13) ravel : convert array into a single row
+14) trigonometric functions : example > np.cos(array_name)
+15) rounding off : np.around(array_name, decimals=0, out=None)
+16) Exponent and Logirthmic : np.exp(array_name)
+                                              np.log(array_name or value)
+17) Reciprocal : np.reciprocal(array_name_or_any_value)
+
+np.arrange(start, stop, interval_or_gap).reshape(rows, col)
+np.ones(one _less_than_ending)
+
+
+Broadcasting with numpy :
+
+
+
+
+Matplotlib :
+# using numpy
+   x = np.arrange()
+   y = np.sin(x)
+
+# poltting using matplotlib' 
+   plt.plot(x,y)
+
+   plt.xlabel('label of x axis')
+   plt.ylabel('label of y axis')
+  
+   plt.title()
+   
+   plt.legend(['sine'])
+
+   plt.show()
+
+   horizontal subplot
+   subplot(2,1,1), subplot(2,1,2)
+   vertical subplot
+   subplot(1,2,1), subplot(1,2,2)
+   subplot grid
+   subplot(2,2,1), subplot(2,2,2)
+
+    
