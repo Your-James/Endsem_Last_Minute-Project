@@ -2,7 +2,7 @@ from secrets import choice
 from os import system
 import time
 
-sentence = 'Welcome to VIIT. You are going through a rigrous typing test.'
+sentence = 'Welcome! Lets play a game to test your typing skills.'
 wordcount = len(sentence.split())
 system('cls')
 
