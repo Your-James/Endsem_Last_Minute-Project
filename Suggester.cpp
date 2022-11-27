@@ -70,6 +70,7 @@ public:
             return 0;
         }
     }
+    //spacing should be proper between every column.
 
     void tellammount(float rate){
         int nights,nrooms;
