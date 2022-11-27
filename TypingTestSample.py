@@ -1,0 +1,22 @@
+from secrets import choice
+from os import system
+import time
+
+sentence = 'Welcome to VIIT. You are going through a rigrous typing test.'
+wordcount = len(sentence.split())
+system('cls')
+
+choice = 2
+while choice==2:
+    print(sentence)
+    ti = time.time()
+    typedtext = str(input("\n"))
+    tf = time.time()
+    accuracy = len(set(typedtext.split()) & set(sentence.split()))
+    accuracy = (accuracy/wordcount)*100
+    timetaken = (tf - ti)
+    wpm = (wordcount/timetaken)*60
+    print("\nWPM =",wpm,"\nAccuracy = ",accuracy," %","\nTimeTaken =",timetaken," sec")
+    print("1.Exit\n2.Type Again\n")
+    choice=int(input())
+    system('cls')
