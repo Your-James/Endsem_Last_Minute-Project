@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 
 html_text = requests.get('https://www.ratatype.com/typing-test/test/').text
-soup = BeautifulSoup(html_text, 'lxml')
+soup = BeautifulSoup(html_text, 'lxml') # We are using Beautiful Soup module for our project...
 content = soup.find_all('div', class_= 'mainTxt')
 wpm = soup.find('span', id_= 'certificateSpeed')
 system('cls')
