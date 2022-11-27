@@ -115,7 +115,7 @@ void getDetails()
     }
  };
 
-////////////////////////// U got it!!! VishwaCTF{LbjtQY_449yfcD}
+////////////////////////// Oops!!! 
 int main()
 {
     //STORING DATA
