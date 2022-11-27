@@ -136,7 +136,7 @@ def start_game():
 
 
 def give_results():
-    #TIME REQUIRED
+    #Method to calculate time required
     global attempts
     attempts+=1
     time_required = time_final - time_initial
